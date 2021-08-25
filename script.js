@@ -2,7 +2,6 @@
 /* eslint-disable no-useless-concat */
 //import "./index.css";
 //import $ from "jquery";
-
 var flowchat = 0;
 var newMessage; //'if i see this, this is an error';
 var Fala;
@@ -12,12 +11,6 @@ document.getElementById("btn1").style.visibility = "hidden";
 document.getElementById("btn2").disabled = true;
 document.getElementById("btn2").style.visibility = "hidden";
 //document.getElementById('btnapi').addEventListener('click', loadREST);
-
-
-
-
-
-
 
 function loadREST() {
   //fetch('http://localhost:3300/usuarios/' + flowchat)

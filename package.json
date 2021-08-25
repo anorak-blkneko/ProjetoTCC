@@ -1,0 +1,24 @@
+{
+  "name": "projetotcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anorak-blkneko/projetotcc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anorak-blkneko/projetotcc/issues"
+  },
+  "homepage": "https://github.com/anorak-blkneko/projetotcc#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^16.6.1"
+  }
+}
