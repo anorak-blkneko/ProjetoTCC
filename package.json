@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anorak-blkneko/projetotcc#readme",
   "dependencies": {
+    "bootstrap": "^5.1.0",
     "express": "^4.17.1",
     "node": "^16.6.1"
   }
