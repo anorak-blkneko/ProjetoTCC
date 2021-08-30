@@ -228,3 +228,8 @@ html, body {
   .input-group-field{
     height: 40px;
   }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }

@@ -41,9 +41,16 @@ function loadREST() {
   
 }
 
-
 async function fetchDataFalas(){
   let response = await fetch('https://api-tcc-renan-augusto.herokuapp.com/falas/');
+  let data = await response.json();
+  data = JSON.stringify(data);
+  data = JSON.parse(data);
+  return data;
+ }
+
+ async function fetchDataImagens(){
+  let response = await fetch('https://api-tcc-renan-augusto.herokuapp.com/imagens/');
   let data = await response.json();
   data = JSON.stringify(data);
   data = JSON.parse(data);
@@ -157,6 +164,7 @@ async function Send() {
 //LEMBRAR: O ARRAY DO JSON COMEÇA EM 0, ENTÃO TODAS AS FALAS DO FLOWCHAR SÃO ID-1 DO BANCO DE DADOS
 async function Flowchat(index) {
   let getdata = await fetchDataFalas(); // here the data will be return.
+  let getimg = await fetchDataImagens();
 
   Fala = $('<div class="message new">' + getdata[index].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
 
@@ -191,13 +199,13 @@ async function Flowchat(index) {
   function tutorialEnviarEmail() {
     Fala = $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[5].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src="./gmail1.jpg" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[6].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src="./gmail2.jpg" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[7].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src="./gmail3.jpg" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[8].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src="./gmail4.jpg" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[4].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
 
     
