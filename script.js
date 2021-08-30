@@ -199,13 +199,13 @@ async function Flowchat(index) {
   function tutorialEnviarEmail() {
     Fala = $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[5].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[6].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[7].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[8].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    Fala = $('<div class="message new">' + '<img src=' + getimg[4].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    Fala = $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     Fala = $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
 
     
