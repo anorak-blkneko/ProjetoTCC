@@ -126,8 +126,13 @@ html, body {
 
   .btn-outline-light {
     background: linear-gradient(120deg, #103540, #17482d);
-    color: White;
+    color: #FFF;
     margin: 5px;
+  }
+
+  .btn:hover {
+    color: #FFF;
+    border: 1px #FFF solid;
   }
 
   .btn-check:focus + .btn, .btn:focus {
