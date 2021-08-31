@@ -122,9 +122,29 @@ html, body {
       margin-right: 10px;
       margin-top: -3px;
     }
-
   }
 
+  .btn-outline-light {
+    background: linear-gradient(120deg, #103540, #17482d);
+    color: White;
+    margin: 5px;
+  }
+
+  .btn:hover {
+    color: rgb(199, 199, 199);
+    border: 1px rgb(153, 153, 153) solid;
+  }
+
+  .btn-check:focus + .btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .btn{
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px #FFF solid;
+  }
 
   .chat-title {
     flex: 0 1 45px;
