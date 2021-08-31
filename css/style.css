@@ -43,7 +43,7 @@ html, body {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url("./BGT2.jpg") repeat 0 0;
+    background: url("./img/BGT2.jpg") repeat 0 0;
     background-size: cover;
     filter: blur(80px);
     /* transform: scale(1.2); */
