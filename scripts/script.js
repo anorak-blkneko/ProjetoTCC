@@ -8,6 +8,13 @@ var newMessage; //'if i see this, this is an error';
 //document.getElementById("btn2").disabled = true;
 //document.getElementById("btn2").style.visibility = "hidden";
 
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+});
+
+
+
 function loadREST() {
   //fetch('http://localhost:3300/usuarios/' + flowchat)
   fetch('https://api-tcc-renan-augusto.herokuapp.com/falas/')
