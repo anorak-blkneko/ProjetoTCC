@@ -2,7 +2,7 @@
 /* eslint-disable no-useless-concat */
 var flowchat = 0;
 var newMessage; //'if i see this, this is an error';
-var isApiAwake = false;
+var tutorialID;
 
 //document.getElementById("btn1").disabled = true;
 //document.getElementById("btn1").style.visibility = "hidden";
@@ -17,7 +17,7 @@ var isApiAwake = false;
 
 
 
-function loadREST() {
+/* function loadREST() {
   //fetch('http://localhost:3300/usuarios/' + flowchat)
   fetch('https://api-tcc-renan-augusto.herokuapp.com/falas/')
   .then(function(response){
@@ -44,7 +44,38 @@ function loadREST() {
   })
 
   
-}
+} */
+
+
+async function fetchDataFBPost(){
+
+  
+
+  var formValue = document.getElementById("FBForm").value;
+  console.log("form value: " + formValue)
+
+  const settings = {
+    method: 'POST',
+    headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    body: JSON.stringify({
+      // your expected POST request payload goes here
+              id_tutorial: tutorialID,
+              descricao: formValue
+             })
+  };
+
+  let response = await fetch('https://api-tcc-renan-augusto.herokuapp.com/feedbacks/', settings);
+
+  const data = await response.json();
+  data = JSON.stringify(data);
+  data = JSON.parse(data);
+  //console.log(data);
+  return data;
+ }
+
 
 
 async function fetchDataFalas(){
@@ -195,6 +226,9 @@ async function Flowchat(index) {
   }
 
   function tutorialEnviarEmail() {
+
+    tutorialID = 1;
+
     $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[5].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
     $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
@@ -206,6 +240,10 @@ async function Flowchat(index) {
     $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" id="email4" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn"  data-bs-toggle="modal" data-bs-target="#POSTModal">POST</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
+
 
   }
 }
