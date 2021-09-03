@@ -2,16 +2,18 @@
 /* eslint-disable no-useless-concat */
 var flowchat = 0;
 var newMessage; //'if i see this, this is an error';
+var isApiAwake = false;
 
 //document.getElementById("btn1").disabled = true;
 //document.getElementById("btn1").style.visibility = "hidden";
 //document.getElementById("btn2").disabled = true;
 //document.getElementById("btn2").style.visibility = "hidden";
 
-window.addEventListener("load", function () {
+/* window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");
   loader.className += " hidden"; // class "loader hidden"
-});
+}); */
+
 
 
 
@@ -66,6 +68,10 @@ async function fetchDataFalas(){
  async function ReadyPost() {
   let getdata = await fetchDataFalas(); // here the data will be return.
   console.log(getdata); // you are using async await then no need of .then().
+
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+
   $('<div class="message new">' + getdata[0].text_fala  + "</div>")
     .appendTo($(".messages"))
     .addClass("new");
