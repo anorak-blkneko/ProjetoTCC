@@ -59,6 +59,7 @@ async function fetchDataFBPost(){
     headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
     body: JSON.stringify({
       // your expected POST request payload goes here
@@ -72,7 +73,7 @@ async function fetchDataFBPost(){
   const data = await response.json();
   data = JSON.stringify(data);
   data = JSON.parse(data);
-  //console.log(data);
+  console.log(data);
   return data;
  }
 
@@ -241,7 +242,7 @@ async function Flowchat(index) {
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    $('<div class="message new">' + '<button type="button" class="btn"  data-bs-toggle="modal" data-bs-target="#POSTModal">POST</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
 
 
 

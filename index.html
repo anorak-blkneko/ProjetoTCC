@@ -74,19 +74,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
-
           <form>
-            <div class="mb-6">
-              <label for="message-text" class="col-form-label">O que achou do tutorial?</label>
-              <textarea class="form-control" id="FBForm"></textarea>
+            <h3><label for="message-text" class="col-form-label">O que você achou? Tem alguma sugestão de um novo tutorial?</label></h3>
+            <div class="form-floating mb-6">
+              <textarea class="form-control" placeholder="Leave a comment here" id="FBForm"></textarea>
+              <label for="FBForm">Escreva aqui um Feedback para nossa equipe!</label>
             </div>
           </form>
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="fetchDataFBPost()">Save changes</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-success" onclick="fetchDataFBPost()">Enviar</button>
         </div>
       </div>
     </div>
