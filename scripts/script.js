@@ -4,7 +4,6 @@ var flowchat = 0;
 var newMessage; //'if i see this, this is an error';
 var tutorialID;
 
-
 //document.getElementById("btn1").disabled = true;
 //document.getElementById("btn1").style.visibility = "hidden";
 //document.getElementById("btn2").disabled = true;
@@ -149,6 +148,14 @@ async function fetchDataFalas(){
   return data;
  }
 
+ async function fetchDataVideos(){
+  let response = await fetch('https://api-tcc-renan-augusto.herokuapp.com/videos/');
+  let data = await response.json();
+  data = JSON.stringify(data);
+  data = JSON.parse(data);
+  return data;
+ }
+
 
  async function ReadyPost() {
   $(".novasmensagens").hide();
@@ -255,6 +262,7 @@ $("#exampleModal").on('hidden.bs.modal', function (e) {
 async function Flowchat(index) {
   let getdata = await fetchDataFalas(); // here the data will be return.
   let getimg = await fetchDataImagens();
+  let getvid = await fetchDataVideos();
 
   Fala = $('<div class="message new">' + getdata[index].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
 
@@ -288,6 +296,8 @@ async function Flowchat(index) {
 
   function tutorialEnviarEmail() {
 
+    $('#videoif').attr('src', getvid[0].video_link)
+
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
@@ -315,6 +325,8 @@ async function Flowchat(index) {
 
 
   function tutorialAnexoEmail(){
+    $('#videoif').attr('src', getvid[1].video_link)
+
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
