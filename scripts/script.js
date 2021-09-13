@@ -90,9 +90,20 @@ function reload(){
 async function fetchDataFBPost(){
 
   
-
+  
   var formValue = document.getElementById("FBForm").value;
-  console.log("form value: " + formValue)
+  formValue = formValue.replace(/[&\/\\#+()$~%.'"*<>{}-]/g,'');
+
+  if(formValue.length < 5){
+    alert('Por favor, preencha o compo somente com letras, com no minimo 5 letras');
+
+  }
+  else{
+    $("#btnsugestao").prop("disabled",true);
+    alert('Muito obrigado!');
+
+
+    console.log("form value: " + formValue)
 
   const settings = {
     method: 'POST',
@@ -115,6 +126,8 @@ async function fetchDataFBPost(){
   data = JSON.parse(data);
   console.log(data);
   return data;
+
+  }
  }
 
 
@@ -284,7 +297,7 @@ async function Flowchat(index) {
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
 
 
