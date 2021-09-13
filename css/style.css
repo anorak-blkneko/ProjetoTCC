@@ -298,3 +298,13 @@ html, body {
 .loadingcircle{
   width: 100px;
 }
+
+.novasmensagens{
+  color: white;
+  text-align: center;
+  background: green;
+  font-size: 16px;
+  padding: 1px 1px 1px 1px;
+  border-radius: 10px;
+  float: right;
+}

@@ -4,6 +4,7 @@ var flowchat = 0;
 var newMessage; //'if i see this, this is an error';
 var tutorialID;
 
+
 //document.getElementById("btn1").disabled = true;
 //document.getElementById("btn1").style.visibility = "hidden";
 //document.getElementById("btn2").disabled = true;
@@ -45,6 +46,45 @@ var tutorialID;
 
   
 } */
+
+$(window).scroll(function() {   
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      alert("bottom!");
+  }
+});
+
+jQuery(function($) {
+  $('.messages').on('scroll', function() {
+      if ($(this).scrollTop() +
+          $(this).innerHeight() >= 
+          $(this)[0].scrollHeight) {
+          
+            //TODO: CODIGO PARA ESCONDER ICONE QUE HÁ NOVAS MENSAGENS
+            $(".novasmensagens").hide();
+            
+          //alert('End of DIV is reached!');
+      }
+      else{
+        //TODO: CODIGO PARA MOSTRAR ICONE QUE HÁ NOVAS MENSAGENS
+        //$(".novasmensagens").show();
+      }
+  });
+});
+
+
+
+
+$('#ENDButton').click(function() {
+  location.reload(true);
+  alert('Reloading Page');
+  console.log("reload");
+});
+
+function reload(){
+  //alert('Reloading Page');
+  console.log("reload");
+  location.reload(true);
+}
 
 
 async function fetchDataFBPost(){
@@ -98,6 +138,7 @@ async function fetchDataFalas(){
 
 
  async function ReadyPost() {
+  $(".novasmensagens").hide();
   let getdata = await fetchDataFalas(); // here the data will be return.
   console.log(getdata); // you are using async await then no need of .then().
 
@@ -228,6 +269,7 @@ async function Flowchat(index) {
 
   function tutorialEnviarEmail() {
 
+    $(".novasmensagens").show();
     tutorialID = 1;
 
     $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
@@ -243,6 +285,7 @@ async function Flowchat(index) {
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
 
 
 
