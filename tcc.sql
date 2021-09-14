@@ -59,9 +59,9 @@ INSERT INTO usuarios VALUES (2, 'renan', 'rena');
 
  --INSERÇÃO DE FALAS
 INSERT INTO falas (text_fala) VALUES ('Olá, eu serei seu assistente virtual, no que posso lhe ajudar hoje?');
-INSERT INTO falas (text_fala) VALUES ('Posso recomendar estas duas opções abaixo:');
+INSERT INTO falas (text_fala) VALUES ('Posso recomendar estas opções abaixo:');
 
-INSERT INTO falas (text_fala) VALUES ('Gmail, claro! O que gostaria saber?');
+INSERT INTO falas (text_fala) VALUES ('Gmail, claro! O que gostaria de saber?');
 
 INSERT INTO falas (text_fala) VALUES ('Para enviar um e-mail utilizando o Gmail, basta seguir os seguintes passos:');
 INSERT INTO falas (text_fala) VALUES ('Primeiro, você precisa ter uma conta no Google, para utilizar o Gmail, geralmente algo como: "seunome@gmail.com"');
@@ -82,11 +82,24 @@ INSERT INTO falas (text_fala) VALUES ('Então, selecione a opção "Anexar arqui
 INSERT INTO falas (text_fala) VALUES ('Agora, navegando pelos arquivos do seu dispositivo, procure pelo arquivo que você deseja anexar ao e-mail e dê um clique nele.');
 INSERT INTO falas (text_fala) VALUES ('Feito isso o arquivo deve aparecer no corpo do e-mail, basta clicar no botão azul para enviá-lo.');
 
+INSERT INTO falas (text_fala) VALUES ('Para adicionar um e-mail aos favoritos no Gmail, basta seguir os seguintes passos:');
+INSERT INTO falas (text_fala) VALUES ('Toque no icone do aplicativo, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Encontre o e-mail que deseja marcar como "favorito".');
+INSERT INTO falas (text_fala) VALUES ('Clique na estrela, no lado direito do e-mail desejado, ela ficará amarela, indicando que foi marcada, assim como mostra a imagem.');
+INSERT INTO falas (text_fala) VALUES ('Em seguida, para ver os e-mails marcados como "favoritos" clique no icone com três linhas, no canto superior esquerdo, como mostrado na imagem.');
+INSERT INTO falas (text_fala) VALUES ('Clique em "Com estrela".');
+INSERT INTO falas (text_fala) VALUES ('Aqui estarão listados todos os seus e-mails que você marcou como favorito.');
+
+
+
+
+
 
 
 --INSERÇÃO DE TUTORIAIS
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Enviar email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Anexar arquivo email');
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
 
 
 --INSERÇÃO DE IMAGENS
@@ -98,6 +111,13 @@ INSERT INTO imagens (id_tutorial, img_link) VALUES (1, 'https://i.imgur.com/2ZqM
 INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/ITp8GwK.png');
 INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/AUqlL4b.png');
 INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/TKLcWEb.png');
+
+INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/Bo6sKEZ.png');
+INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/2VaPMY8.png');
+INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/XPvO6TN.png');
+INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/J27Mser.png');
+INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/vvwVYBU.png');
+
 
 --INSERÇÃO DE VIDEO
 INSERT INTO videos (id_tutorial, video_link) VALUES (1, 'https://www.youtube.com/embed/pQw-L8hajtg');

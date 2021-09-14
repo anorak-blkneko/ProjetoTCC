@@ -52,11 +52,33 @@ $(window).scroll(function() {
   }
 });
 
-jQuery(function($) {
+/* jQuery(function($) {
   $('.messages').on('scroll', function() {
       if ($(this).scrollTop() +
           $(this).innerHeight() >= 
           $(this)[0].scrollHeight) {
+            console.log(this.scrollHeight);
+            console.log(this.innerHeight);
+            console.log(this.scrollTop);
+          
+            //TODO: CODIGO PARA ESCONDER ICONE QUE HÁ NOVAS MENSAGENS
+            $(".novasmensagens").hide();
+            
+          //alert('End of DIV is reached!');
+      }
+      else{
+        //TODO: CODIGO PARA MOSTRAR ICONE QUE HÁ NOVAS MENSAGENS
+        //$(".novasmensagens").show();
+      }
+  });
+}); */
+
+jQuery(function($) {
+  $('.messages').on('scroll', function() {
+      if (this.scrollTop === (this.scrollHeight - this.offsetHeight)){
+            console.log(this.scrollHeight);
+            console.log(this.innerHeight);
+            console.log(this.scrollTop);
           
             //TODO: CODIGO PARA ESCONDER ICONE QUE HÁ NOVAS MENSAGENS
             $(".novasmensagens").hide();
@@ -160,6 +182,8 @@ async function fetchDataFalas(){
 
  async function ReadyPost() {
   $(".novasmensagens").hide();
+  $("#btn1").hide();
+  $("#btn3").hide();
   let getdata = await fetchDataFalas(); // here the data will be return.
   console.log(getdata); // you are using async await then no need of .then().
 
@@ -239,6 +263,26 @@ $("#btn2").click(function () {
 
 });
 
+$("#btn3").click(function () {
+  
+  switch(flowchat){
+    case 1:
+      
+    break;
+    case 2:
+      //Gmail e-mails favoritos
+      flowchat = 20
+
+      $('<div class="message message-personal">' + document.getElementById("btn3").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
+    break;
+  }
+  
+
+});
+
 
 async function Send() {
   var mensage = $("#inputtype").val();
@@ -282,6 +326,9 @@ async function Flowchat(index) {
     case 2:
       document.getElementById("btn1").value = "Enviar e-mails";
       document.getElementById("btn2").value = "Anexar arquivos ao e-mail";
+      document.getElementById("btn3").value = "Adicionar um e-mail aos favoritos";
+      $("#btn1").show();
+      $("#btn3").show();
     break;
 
     case 3:
@@ -290,6 +337,10 @@ async function Flowchat(index) {
 
     case 12:
       tutorialAnexoEmail();
+    break;
+
+    case 20:
+      tutorialEmailsFavoritos();
     break;
 
     
@@ -302,6 +353,7 @@ async function Flowchat(index) {
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
+    $("#btn3").hide();
     tutorialID = 1; //ID do tutorial que foi feito, para ser enviado no feedback.
 
     $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
@@ -331,6 +383,7 @@ async function Flowchat(index) {
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
+    $("#btn3").hide();
     tutorialID = 2; //ID do tutorial que foi feito, para ser enviado no feedback.
 
     $('<div class="message new">' + getdata[13].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
@@ -356,6 +409,32 @@ async function Flowchat(index) {
 
   }
 
+  function tutorialEmailsFavoritos(){
+    $(".novasmensagens").show();
+    $("#btn1").hide();
+    $("#btn2").hide();
+    $("#btn3").hide();
+    tutorialID = 3; //ID do tutorial que foi feito, para ser enviado no feedback.
+
+    $('<div class="message new">' + getdata[21].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
+    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[22].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[7].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[23].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
+    $('<div class="message new">' + '<img src=' + getimg[8].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[24].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
+    $('<div class="message new">' + '<img src=' + getimg[9].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[25].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
+    $('<div class="message new">' + '<img src=' + getimg[10].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[26].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[11].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
+
+  }
 
 
 }
