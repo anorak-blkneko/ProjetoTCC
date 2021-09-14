@@ -91,7 +91,7 @@ async function fetchDataFBPost(){
   
   
   var formValue = document.getElementById("FBForm").value;
-  formValue = formValue.replace(/[&\/\\#+()$~%.'"*<>{}-]/g,'');
+  formValue = formValue.replace(/[&\/\\#+()$~%.'"*<>{}-|]/g,'');
 
   if(formValue.length < 5){
     alert('Por favor, preencha o compo somente com texto, utilizando no minimo 5 letras');
