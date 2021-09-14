@@ -55,9 +55,9 @@ html, body {
     top: 50%;
     left: 50%;  
     transform: translate(-50%, -50%);
-    max-width: 400px;
+    max-width: 500px;
     height: 100%;
-    max-height: 600px;
+    max-height: 800px;
     z-index: 2; 
     overflow: hidden;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
@@ -76,9 +76,9 @@ html, body {
     .chat {
       position: absolute;
       
-      top: auto;
+      /* top: auto;
       left: auto;  
-      transform: translate(0%, -0%);
+      transform: translate(0%, -0%); */
       max-width: 400px;
       height: 100%;
       max-height: 600px;
@@ -92,7 +92,7 @@ html, body {
       justify-content: space-between;
       flex-direction: column;
       margin-right: 10px;
-      margin-top: 70px;
+      /* margin-top: 70px; */
     }
     
   }
