@@ -358,13 +358,13 @@ async function Flowchat(index) {
 
     $('<div class="message new">' + getdata[4].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[5].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" alt=" '+ getimg[0].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[6].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive" id="email2" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive" alt=" '+ getimg[1].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[7].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" alt=" '+ getimg[2].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[8].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
-    $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" id="email4" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" alt=" '+ getimg[3].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
@@ -387,19 +387,19 @@ async function Flowchat(index) {
     tutorialID = 2; //ID do tutorial que foi feito, para ser enviado no feedback.
 
     $('<div class="message new">' + getdata[13].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" alt=" '+ getimg[0].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[14].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive" id="email2" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[1].img_link  + ' class="responsive" alt=" '+ getimg[1].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[15].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[2].img_link  + ' class="responsive" alt=" '+ getimg[2].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[16].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[4].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[4].img_link  + ' class="responsive" alt=" '+ getimg[4].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[17].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[5].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[5].img_link  + ' class="responsive" alt=" '+ getimg[5].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[18].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[6].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[6].img_link  + ' class="responsive" alt=" '+ getimg[6].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[19].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" id="email3" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[3].img_link  + ' class="responsive" alt=" '+ getimg[3].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
@@ -417,17 +417,17 @@ async function Flowchat(index) {
     tutorialID = 3; //ID do tutorial que foi feito, para ser enviado no feedback.
 
     $('<div class="message new">' + getdata[21].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[0].img_link  + ' class="responsive" alt=" '+ getimg[0].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[22].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[7].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[7].img_link  + ' class="responsive" alt=" '+ getimg[7].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[23].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[8].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[8].img_link  + ' class="responsive" alt=" '+ getimg[8].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[24].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[9].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[9].img_link  + ' class="responsive" alt=" '+ getimg[9].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[25].text_fala  + "</div>").appendTo($(".messages")).addClass("new");  
-    $('<div class="message new">' + '<img src=' + getimg[10].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[10].img_link  + ' class="responsive" alt=" '+ getimg[10].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[26].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
-    $('<div class="message new">' + '<img src=' + getimg[11].img_link  + ' class="responsive" id="email1" alt="">' + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + '<img src=' + getimg[11].img_link  + ' class="responsive" alt=" '+ getimg[11].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");

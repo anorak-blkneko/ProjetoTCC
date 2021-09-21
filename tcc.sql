@@ -31,7 +31,8 @@ CREATE TABLE tutoriais (
 CREATE TABLE imagens (
 	id_img SERIAL PRIMARY KEY,
 	id_tutorial INT REFERENCES tutoriais (id_tutorial),
-    img_link VARCHAR(300) NOT NULL
+    img_link VARCHAR(300) NOT NULL,
+	img_alt VARCHAR(125)
 );
 
 --CREATE TABLE FEEDBACK
@@ -103,20 +104,20 @@ INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
 
 
 --INSERÇÃO DE IMAGENS
-INSERT INTO imagens (id_tutorial, img_link) VALUES (1, 'https://i.imgur.com/uRlpC5p.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (1, 'https://i.imgur.com/IY7RX5l.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (1, 'https://i.imgur.com/wrBcZR3.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (1, 'https://i.imgur.com/2ZqMdf1.png');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (1, 'https://i.imgur.com/uRlpC5p.png', 'Imagem com texto: abra o Gmail, destacando o ícone do Gmail.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (1, 'https://i.imgur.com/IY7RX5l.png', 'Imagem com texto: aperte em escrever, destacando o botão de escrever novos e-mails.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (1, 'https://i.imgur.com/wrBcZR3.png', 'Imagem com texto: preencha os campos, demonstrando como preencher os campos do e-mail.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (1, 'https://i.imgur.com/2ZqMdf1.png', 'Imagem com texto: aperte nesse botão azul para enviar, destacando o botão azul para enviar o email.');
 
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/ITp8GwK.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/AUqlL4b.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/TKLcWEb.png');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/ITp8GwK.png', 'Imagem com texto: aperte nesse botão para anexar, destacando o botão de anexar arquivos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/AUqlL4b.png', 'Imagem com texto: agora aperte em anexar arquivo, demonstrando a opção para anexar arquivos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/TKLcWEb.png', 'Imagem com texto: escolha seu arquivo para enviar, demonstrando um arquivo a ser selecionado.');
 
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/Bo6sKEZ.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/2VaPMY8.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/XPvO6TN.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/J27Mser.png');
-INSERT INTO imagens (id_tutorial, img_link) VALUES (2, 'https://i.imgur.com/vvwVYBU.png');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/Bo6sKEZ.png', 'Imagem com texto: selecione um email para tornar favorito, demonstrando um email a ser selecionado.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/2VaPMY8.png', 'Imagem com texto: clique na estrela do lado direito, indicando o botão para adicionar aos favoritos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/XPvO6TN.png', 'Imagem com texto: agora para ver os favoritos clique aqui, indicando o botão de menu.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/J27Mser.png', 'Imagem com texto: clique no com estrela, indicando o botão para acessar a página de favoritos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/vvwVYBU.png', 'Imagem com texto: aqui está seu email favorito, mostrando a páginas de emails favoritos.');
 
 
 --INSERÇÃO DE VIDEO
