@@ -91,9 +91,18 @@ INSERT INTO falas (text_fala) VALUES ('Em seguida, para ver os e-mails marcados 
 INSERT INTO falas (text_fala) VALUES ('Clique em "Com estrela".');
 INSERT INTO falas (text_fala) VALUES ('Aqui estarão listados todos os seus e-mails que você marcou como favorito.');
 
+INSERT INTO falas (text_fala) VALUES ('Sistema Android, claro! O que gostaria de saber?');
 
-
-
+INSERT INTO falas (text_fala) VALUES ('Para alterar o tamanho da fonte de seu dispositivo, basta seguir os seguintes passos:');
+INSERT INTO falas (text_fala) VALUES ('Toque no icone de configurações do seu dispositivo, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Encontre a opção "acessibilidade"');
+INSERT INTO falas (text_fala) VALUES ('Então clique em "tamanho da fonte", como indicado na imagem.');
+INSERT INTO falas (text_fala) VALUES ('Toque no icone do aplicativo, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Clique na letra "A" grande para aumentar o tamanho das fontes, você também pode clicar na letra "A" pequena para diminuir a fonte.');
+INSERT INTO falas (text_fala) VALUES ('Clique na seta no canto superior direito para para voltar.');
+INSERT INTO falas (text_fala) VALUES ('Agora, clique em "Tamanho da exibição", como indicado na imagem.');
+INSERT INTO falas (text_fala) VALUES ('Aqui você pode clicar no "+" para aumentar o tamanho das conversas ou no "-" para diminuir o tamanho.');
+INSERT INTO falas (text_fala) VALUES ('Lembre-se que mudar o tamanho de exibição pode alterar o posicionamento de alguns apps.');
 
 
 
@@ -101,6 +110,7 @@ INSERT INTO falas (text_fala) VALUES ('Aqui estarão listados todos os seus e-ma
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Enviar email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Anexar arquivo email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Aumentar o tamanho dos textos');
 
 
 --INSERÇÃO DE IMAGENS

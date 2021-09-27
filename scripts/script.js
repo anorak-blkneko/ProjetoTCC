@@ -182,7 +182,6 @@ async function fetchDataFalas(){
 
  async function ReadyPost() {
   $(".novasmensagens").hide();
-  $("#btn1").hide();
   $("#btn3").hide();
   let getdata = await fetchDataFalas(); // here the data will be return.
   console.log(getdata); // you are using async await then no need of .then().
@@ -215,8 +214,8 @@ $("#btn1").click(function () {
  
   switch(flowchat){
     case 1:
-      //code
-
+      //Sistema Android
+      flowchat = 27;
 
       $('<div class="message message-personal">' + document.getElementById("btn1").value + "</div>")
       .appendTo($(".messages"))
@@ -226,6 +225,15 @@ $("#btn1").click(function () {
     case 2:
       //Gmail: enviar e-mail
       flowchat = 3;
+
+      $('<div class="message message-personal">' + document.getElementById("btn1").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
+    break;
+    case 27:
+      //Sistema ANdroid: Tamanho da fonte
+      flowchat = 28;
 
       $('<div class="message message-personal">' + document.getElementById("btn1").value + "</div>")
       .appendTo($(".messages"))
@@ -252,6 +260,15 @@ $("#btn2").click(function () {
     case 2:
       //Gmail anexar arquivos
       flowchat = 12
+
+      $('<div class="message message-personal">' + document.getElementById("btn2").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
+    break;
+    case 28:
+      //Sistema Android: Tirar um print da tela
+      flowchat = 000000;
 
       $('<div class="message message-personal">' + document.getElementById("btn2").value + "</div>")
       .appendTo($(".messages"))
@@ -316,7 +333,7 @@ async function Flowchat(index) {
       document.getElementById("btn1").style.visibility = "visible";
       document.getElementById("btn2").style.visibility = "visible";
 
-      document.getElementById("btn1").value = "WhatsApp";
+      document.getElementById("btn1").value = "Sistema Android";
       document.getElementById("btn2").value = "G-Mail";
 
       document.getElementById("btn1").disabled = false;
@@ -341,6 +358,14 @@ async function Flowchat(index) {
 
     case 20:
       tutorialEmailsFavoritos();
+    break;
+
+    case 27:
+      document.getElementById("btn1").value = "Aumentar o tamanho das letras";
+      document.getElementById("btn2").value = "Tirar um print da tela";
+    break;
+    case 28:
+      tutorialTamanhoFonte();
     break;
 
     
@@ -435,6 +460,23 @@ async function Flowchat(index) {
 
 
   }
+
+  function tutorialTamanhoFonte(){
+    $(".novasmensagens").show();
+    $("#btn1").hide();
+    $("#btn2").hide();
+    $("#btn3").hide();
+    tutorialID = 4; //ID do tutorial que foi feito, para ser enviado no feedback.
+
+    $('<div class="message new">' + getdata[29].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[30].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[31].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[32].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[33].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+    $('<div class="message new">' + getdata[34].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+
+  }
+
 
 
 }
