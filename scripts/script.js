@@ -266,9 +266,9 @@ $("#btn2").click(function () {
       .addClass("new");
       Flowchat(flowchat);
     break;
-    case 28:
+    case 27:
       //Sistema Android: Tirar um print da tela
-      flowchat = 000000;
+      flowchat = 37;
 
       $('<div class="message message-personal">' + document.getElementById("btn2").value + "</div>")
       .appendTo($(".messages"))
@@ -366,6 +366,9 @@ async function Flowchat(index) {
     break;
     case 28:
       tutorialTamanhoFonte();
+    break;
+    case 37:
+      tutorialPrint();
     break;
 
     
@@ -491,6 +494,36 @@ async function Flowchat(index) {
 
 
     $('<div class="message new">' + getdata[36].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
+
+    $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
+
+  }
+
+  function tutorialPrint(){
+    $(".novasmensagens").show();
+    $("#btn1").hide();
+    $("#btn2").hide();
+    $("#btn3").hide();
+    tutorialID = 5; //ID do tutorial que foi feito, para ser enviado no feedback.
+
+    $('<div class="message new">' + getdata[38].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[19].img_link  + ' class="responsive" alt=" '+ getimg[19].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[39].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[20].img_link  + ' class="responsive" alt=" '+ getimg[20].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[40].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[21].img_link  + ' class="responsive" alt=" '+ getimg[21].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[41].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[22].img_link  + ' class="responsive" alt=" '+ getimg[22].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
 
     $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");

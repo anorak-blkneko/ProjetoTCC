@@ -59,7 +59,7 @@ INSERT INTO usuarios VALUES (2, 'renan', 'rena');
 
 
  --INSERÇÃO DE FALAS
-INSERT INTO falas (text_fala) VALUES ('Olá, eu sou Botsy, serei seu assistente virtual, no que posso lhe ajudar hoje?');
+INSERT INTO falas (text_fala) VALUES ('Olá, eu sou Axel, serei seu assistente virtual, no que posso lhe ajudar hoje?');
 INSERT INTO falas (text_fala) VALUES ('Posso recomendar estas opções abaixo:');
 
 INSERT INTO falas (text_fala) VALUES ('Gmail, claro! O que gostaria de saber?');
@@ -103,6 +103,13 @@ INSERT INTO falas (text_fala) VALUES ('Agora, clique em "Tamanho da exibição",
 INSERT INTO falas (text_fala) VALUES ('Aqui você pode clicar no "+" para aumentar o tamanho das conversas ou no "-" para diminuir o tamanho.');
 INSERT INTO falas (text_fala) VALUES ('Lembre-se que mudar o tamanho de exibição pode alterar o posicionamento de alguns apps.');
 
+INSERT INTO falas (text_fala) VALUES ('Para fazer a captura da tela do seu celular, siga o seguinte passo:');
+INSERT INTO falas (text_fala) VALUES ('Segure o botão de desligar e o botão de abaixar o volume ao mesmo tempo, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('A tela de seu celular deve piscar, com uma animação e som, indicando que deu certo.');
+INSERT INTO falas (text_fala) VALUES ('Agora, para verificarmos como ficou a captura de tela puxe a aba de notificações para baixo, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Basta clicar na notificação referente ao print para visualiza-lo.');
+
+
 
 
 --INSERÇÃO DE TUTORIAIS
@@ -110,6 +117,8 @@ INSERT INTO tutoriais (nome_tutorial) VALUES ('Enviar email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Anexar arquivo email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Aumentar o tamanho dos textos');
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Tirar print da tela.');
+
 
 
 --INSERÇÃO DE IMAGENS
@@ -135,6 +144,12 @@ INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/I1Blzag.png', 'Imagem com texto: clique na seta para voltar, indicando a seta para voltar.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/t3BrmdA.png', 'Imagem com texto: clique em tamanho de exibição, indicando a opção tamanho da exibição.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/vT22OBK.png', 'Imagem com texto: clique no + para aumentar o tamanho da conversa, indicando o botão de +.');
+
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/KMyojZz.png', 'Imagem com texto: segure o botão de desligar e ao mesmo tempo o de abaixar volume, indicando os botões.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/mBp4xHy.png', 'Imagem com texto: se a tela piscar desse jeito, funcionou!, mostrando como a tela deve ficar.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/j3ifr6Z.png', 'Imagem com texto: puxe a aba de notificação para baixo, indicando onde deslizar o dedo.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/cAaR2GM.png', 'Imagem com texto: clique na notificação para ver o print, indicando a notificação da captura de tela.');
+
 
 
 --INSERÇÃO DE VIDEO
