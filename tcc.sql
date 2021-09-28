@@ -155,6 +155,7 @@ INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur
 --INSERÇÃO DE VIDEO
 INSERT INTO videos (id_tutorial, video_link) VALUES (1, 'https://www.youtube.com/embed/pQw-L8hajtg');
 INSERT INTO videos (id_tutorial, video_link) VALUES (2, 'https://www.youtube.com/embed/YL4y-VIDAvA');
+INSERT INTO videos (id_tutorial, video_link) VALUES (5, 'https://www.youtube.com/embed/a8Z9DxHcJ54');
 
 
 

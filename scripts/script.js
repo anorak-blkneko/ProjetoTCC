@@ -506,6 +506,8 @@ async function Flowchat(index) {
   }
 
   function tutorialPrint(){
+    $('#videoif').attr('src', getvid[2].video_link)
+
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
