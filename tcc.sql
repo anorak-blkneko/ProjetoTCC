@@ -59,7 +59,7 @@ INSERT INTO usuarios VALUES (2, 'renan', 'rena');
 
 
  --INSERÇÃO DE FALAS
-INSERT INTO falas (text_fala) VALUES ('Olá, eu serei seu assistente virtual, no que posso lhe ajudar hoje?');
+INSERT INTO falas (text_fala) VALUES ('Olá, eu sou Botsy, serei seu assistente virtual, no que posso lhe ajudar hoje?');
 INSERT INTO falas (text_fala) VALUES ('Posso recomendar estas opções abaixo:');
 
 INSERT INTO falas (text_fala) VALUES ('Gmail, claro! O que gostaria de saber?');
@@ -97,9 +97,8 @@ INSERT INTO falas (text_fala) VALUES ('Para alterar o tamanho da fonte de seu di
 INSERT INTO falas (text_fala) VALUES ('Toque no icone de configurações do seu dispositivo, como mostrado na imagem a seguir:');
 INSERT INTO falas (text_fala) VALUES ('Encontre a opção "acessibilidade"');
 INSERT INTO falas (text_fala) VALUES ('Então clique em "tamanho da fonte", como indicado na imagem.');
-INSERT INTO falas (text_fala) VALUES ('Toque no icone do aplicativo, como mostrado na imagem a seguir:');
 INSERT INTO falas (text_fala) VALUES ('Clique na letra "A" grande para aumentar o tamanho das fontes, você também pode clicar na letra "A" pequena para diminuir a fonte.');
-INSERT INTO falas (text_fala) VALUES ('Clique na seta no canto superior direito para para voltar.');
+INSERT INTO falas (text_fala) VALUES ('Clique na seta no canto superior esquerdo para para voltar.');
 INSERT INTO falas (text_fala) VALUES ('Agora, clique em "Tamanho da exibição", como indicado na imagem.');
 INSERT INTO falas (text_fala) VALUES ('Aqui você pode clicar no "+" para aumentar o tamanho das conversas ou no "-" para diminuir o tamanho.');
 INSERT INTO falas (text_fala) VALUES ('Lembre-se que mudar o tamanho de exibição pode alterar o posicionamento de alguns apps.');
@@ -123,11 +122,19 @@ INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/AUqlL4b.png', 'Imagem com texto: agora aperte em anexar arquivo, demonstrando a opção para anexar arquivos.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/TKLcWEb.png', 'Imagem com texto: escolha seu arquivo para enviar, demonstrando um arquivo a ser selecionado.');
 
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/Bo6sKEZ.png', 'Imagem com texto: selecione um email para tornar favorito, demonstrando um email a ser selecionado.');
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/2VaPMY8.png', 'Imagem com texto: clique na estrela do lado direito, indicando o botão para adicionar aos favoritos.');
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/XPvO6TN.png', 'Imagem com texto: agora para ver os favoritos clique aqui, indicando o botão de menu.');
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/J27Mser.png', 'Imagem com texto: clique no com estrela, indicando o botão para acessar a página de favoritos.');
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (2, 'https://i.imgur.com/vvwVYBU.png', 'Imagem com texto: aqui está seu email favorito, mostrando a páginas de emails favoritos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (3, 'https://i.imgur.com/Bo6sKEZ.png', 'Imagem com texto: selecione um email para tornar favorito, demonstrando um email a ser selecionado.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (3, 'https://i.imgur.com/2VaPMY8.png', 'Imagem com texto: clique na estrela do lado direito, indicando o botão para adicionar aos favoritos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (3, 'https://i.imgur.com/XPvO6TN.png', 'Imagem com texto: agora para ver os favoritos clique aqui, indicando o botão de menu.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (3, 'https://i.imgur.com/J27Mser.png', 'Imagem com texto: clique no com estrela, indicando o botão para acessar a página de favoritos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (3, 'https://i.imgur.com/vvwVYBU.png', 'Imagem com texto: aqui está seu email favorito, mostrando a páginas de emails favoritos.');
+
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/0ooJq1Q.png', 'Imagem com texto: abra as configurações, destacando o icone de configurações.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/2VLwNUn.png', 'Imagem com texto: procure por acessibilidade, indicando o botão de acessibilidade.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/94CYtfn.png', 'Imagem com texto: clique em tamanho da fonte, indicando a opção tamanho da fonte.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/7SOZHeZ.png', 'Imagem com texto: clique no A em maiusculo para aumentar o tamanho do texto, indicando o botão A.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/I1Blzag.png', 'Imagem com texto: clique na seta para voltar, indicando a seta para voltar.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/t3BrmdA.png', 'Imagem com texto: clique em tamanho de exibição, indicando a opção tamanho da exibição.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (4, 'https://i.imgur.com/vT22OBK.png', 'Imagem com texto: clique no + para aumentar o tamanho da conversa, indicando o botão de +.');
 
 
 --INSERÇÃO DE VIDEO
