@@ -376,7 +376,7 @@ async function Flowchat(index) {
 
   function tutorialEnviarEmail() {
 
-    $('#videoif').attr('src', getvid[0].video_link)
+    $('#videoif').attr('src', getvid[0].video_link);
 
     $(".novasmensagens").show();
     $("#btn1").hide();
@@ -406,7 +406,7 @@ async function Flowchat(index) {
 
 
   function tutorialAnexoEmail(){
-    $('#videoif').attr('src', getvid[1].video_link)
+    $('#videoif').attr('src', getvid[1].video_link);
 
     $(".novasmensagens").show();
     $("#btn1").hide();
@@ -438,6 +438,8 @@ async function Flowchat(index) {
   }
 
   function tutorialEmailsFavoritos(){
+    $('#videoif').attr('src', getvid[3].video_link);
+
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
@@ -456,6 +458,8 @@ async function Flowchat(index) {
     $('<div class="message new">' + '<img src=' + getimg[10].img_link  + ' class="responsive" alt=" '+ getimg[10].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[26].text_fala  + "</div>").appendTo($(".messages")).addClass("new"); 
     $('<div class="message new">' + '<img src=' + getimg[11].img_link  + ' class="responsive" alt=" '+ getimg[11].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
@@ -465,6 +469,8 @@ async function Flowchat(index) {
   }
 
   function tutorialTamanhoFonte(){
+    $('#videoif').attr('src', getvid[4].video_link);
+
     $(".novasmensagens").show();
     $("#btn1").hide();
     $("#btn2").hide();
@@ -506,7 +512,7 @@ async function Flowchat(index) {
   }
 
   function tutorialPrint(){
-    $('#videoif').attr('src', getvid[2].video_link)
+    $('#videoif').attr('src', getvid[2].video_link);
 
     $(".novasmensagens").show();
     $("#btn1").hide();
