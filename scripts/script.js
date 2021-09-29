@@ -182,7 +182,6 @@ async function fetchDataFalas(){
 
  async function ReadyPost() {
   $(".novasmensagens").hide();
-  $("#btn3").hide();
   let getdata = await fetchDataFalas(); // here the data will be return.
   console.log(getdata); // you are using async await then no need of .then().
 
@@ -240,6 +239,16 @@ $("#btn1").click(function () {
       .addClass("new");
       Flowchat(flowchat);
     break;
+    case 42:
+      //Whatsapp: Compartilhar fotos
+      flowchat = 43;
+
+      $('<div class="message message-personal">' + document.getElementById("btn1").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
+    break;
+
   }
 
   
@@ -284,6 +293,14 @@ $("#btn3").click(function () {
   
   switch(flowchat){
     case 1:
+      //Whatsapp
+      flowchat = 42;
+
+
+      $('<div class="message message-personal">' + document.getElementById("btn3").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
       
     break;
     case 2:
@@ -332,20 +349,21 @@ async function Flowchat(index) {
     case 1:
       document.getElementById("btn1").style.visibility = "visible";
       document.getElementById("btn2").style.visibility = "visible";
+      document.getElementById("btn3").style.visibility = "visible";
 
       document.getElementById("btn1").value = "Sistema Android";
       document.getElementById("btn2").value = "G-Mail";
+      document.getElementById("btn3").value = "Whatsapp";
 
       document.getElementById("btn1").disabled = false;
       document.getElementById("btn2").disabled = false;
+      document.getElementById("btn3").disabled = false;
     break;
 
     case 2:
       document.getElementById("btn1").value = "Enviar e-mails";
       document.getElementById("btn2").value = "Anexar arquivos ao e-mail";
       document.getElementById("btn3").value = "Adicionar um e-mail aos favoritos";
-      $("#btn1").show();
-      $("#btn3").show();
     break;
 
     case 3:
@@ -361,6 +379,7 @@ async function Flowchat(index) {
     break;
 
     case 27:
+      $("#btn3").hide();
       document.getElementById("btn1").value = "Aumentar o tamanho das letras";
       document.getElementById("btn2").value = "Tirar um print da tela";
     break;
@@ -370,6 +389,15 @@ async function Flowchat(index) {
     case 37:
       tutorialPrint();
     break;
+    case 42:
+      $("#btn3").hide();
+      document.getElementById("btn1").value = "Compartilhar imagem ou video";
+      document.getElementById("btn2").value = "Compartilhar videos do youtube";
+    break;
+    case 43:
+      tutorialCompartilharFotos();
+    break;
+
 
     
   }
@@ -543,6 +571,47 @@ async function Flowchat(index) {
 
   }
 
+  function tutorialCompartilharFotos(){
+    //$('#videoif').attr('src', getvid[2].video_link);
+
+    $(".novasmensagens").show();
+    $("#btn1").hide();
+    $("#btn2").hide();
+    $("#btn3").hide();
+    tutorialID = 6; //ID do tutorial que foi feito, para ser enviado no feedback.
+
+    $('<div class="message new">' + getdata[44].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[23].img_link  + ' class="responsive" alt=" '+ getimg[23].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[45].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[24].img_link  + ' class="responsive" alt=" '+ getimg[24].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[46].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[25].img_link  + ' class="responsive" alt=" '+ getimg[25].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[47].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[26].img_link  + ' class="responsive" alt=" '+ getimg[26].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[48].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[27].img_link  + ' class="responsive" alt=" '+ getimg[27].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[49].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[28].img_link  + ' class="responsive" alt=" '+ getimg[28].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[50].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[29].img_link  + ' class="responsive" alt=" '+ getimg[29].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
+
+
+
+  }
 
 
 }

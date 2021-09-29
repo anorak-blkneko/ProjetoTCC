@@ -109,6 +109,18 @@ INSERT INTO falas (text_fala) VALUES ('A tela de seu celular deve piscar, com um
 INSERT INTO falas (text_fala) VALUES ('Agora, para verificarmos como ficou a captura de tela puxe a aba de notificações para baixo, como mostrado na imagem a seguir:');
 INSERT INTO falas (text_fala) VALUES ('Basta clicar na notificação referente ao print para visualiza-lo.');
 
+INSERT INTO falas (text_fala) VALUES ('Whatsapp, claro! O que gostaria de saber?');
+
+INSERT INTO falas (text_fala) VALUES ('Para enviar imagens e videos no whatsapp, basta seguir os seguintes passos:');
+INSERT INTO falas (text_fala) VALUES ('Toque no icone do Whatsapp, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Abra a conversa com a pessoa que deseja enviar as fotos ou videos.');
+INSERT INTO falas (text_fala) VALUES ('Clique no icone de um clipe de papel.');
+INSERT INTO falas (text_fala) VALUES ('Selecione "Galeria", como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Selecione no minimo uma imagem para enviar, você pode selecionar mais de uma.');
+INSERT INTO falas (text_fala) VALUES ('Clique na seta verde para enviar a imagem, aqui você pode escrever uma legenda para a imagem.');
+INSERT INTO falas (text_fala) VALUES ('Pronto, sua imagem será demonstrada na conversa assim como na imagem a seguir:');
+
+
 
 
 
@@ -117,8 +129,8 @@ INSERT INTO tutoriais (nome_tutorial) VALUES ('Enviar email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Anexar arquivo email');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Aumentar o tamanho dos textos');
-INSERT INTO tutoriais (nome_tutorial) VALUES ('Tirar print da tela.');
-
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Tirar print da tela');
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Compartilhar imagens e videos');
 
 
 --INSERÇÃO DE IMAGENS
@@ -150,12 +162,22 @@ INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/j3ifr6Z.png', 'Imagem com texto: puxe a aba de notificação para baixo, indicando onde deslizar o dedo.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/cAaR2GM.png', 'Imagem com texto: clique na notificação para ver o print, indicando a notificação da captura de tela.');
 
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/dNjuAof.png', 'Imagem com texto: abra o Whatsapp, indicando o icone do WHatsapp');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/YUpeg2R.png', 'Imagem com texto: abra alguma conversa, indicando uma conversa qualquer.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/syuXOoA.png', 'Imagem com texto: clique no clipe de papel, indicando o botão para anexar arquivos.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/nP7MLLO.png', 'Imagem com texto: aperte em galeria, indicando o icone de galeria.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/pt7rm0r.png', 'Imagem com texto: selecione uma imagem na galeria, mostrando as imagens a serem selecionadas.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/BcshqMF.png', 'Imagem com texto> clique na seta para a direito, indicando a o botão de enviar.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/gfZ89bH.png', 'Imagem com texto: pronto sua imagem foi enviar, mostrando a imagem enviada na conversa.');
+
 
 
 --INSERÇÃO DE VIDEO
 INSERT INTO videos (id_tutorial, video_link) VALUES (1, 'https://www.youtube.com/embed/pQw-L8hajtg');
 INSERT INTO videos (id_tutorial, video_link) VALUES (2, 'https://www.youtube.com/embed/YL4y-VIDAvA');
 INSERT INTO videos (id_tutorial, video_link) VALUES (5, 'https://www.youtube.com/embed/a8Z9DxHcJ54');
+INSERT INTO videos (id_tutorial, video_link) VALUES (3, 'https://www.youtube.com/embed/KSq8qAJjxWo');
+INSERT INTO videos (id_tutorial, video_link) VALUES (4, 'https://www.youtube.com/embed/x0G-U4nqOtE');
 
 
 
