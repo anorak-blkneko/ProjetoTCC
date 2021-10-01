@@ -196,6 +196,9 @@ INSERT INTO videos (id_tutorial, video_link) VALUES (2, 'https://www.youtube.com
 INSERT INTO videos (id_tutorial, video_link) VALUES (5, 'https://www.youtube.com/embed/a8Z9DxHcJ54');
 INSERT INTO videos (id_tutorial, video_link) VALUES (3, 'https://www.youtube.com/embed/KSq8qAJjxWo');
 INSERT INTO videos (id_tutorial, video_link) VALUES (4, 'https://www.youtube.com/embed/x0G-U4nqOtE');
+INSERT INTO videos (id_tutorial, video_link) VALUES (6, 'https://www.youtube.com/embed/8rxXlWlVig0');
+INSERT INTO videos (id_tutorial, video_link) VALUES (7, 'https://www.youtube.com/embed/523vkxC2OUA');
+
 
 
 
