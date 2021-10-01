@@ -284,6 +284,15 @@ $("#btn2").click(function () {
       .addClass("new");
       Flowchat(flowchat);
     break;
+    case 42:
+      //Whatsapp: Compartilhar videos do youtube
+      flowchat = 51;
+
+      $('<div class="message message-personal">' + document.getElementById("btn2").value + "</div>")
+      .appendTo($(".messages"))
+      .addClass("new");
+      Flowchat(flowchat);
+    break;
   }
   
 
@@ -396,6 +405,9 @@ async function Flowchat(index) {
     break;
     case 43:
       tutorialCompartilharFotos();
+    break;
+    case 51:
+      tutorialCompartilharvideos();
     break;
 
 
@@ -607,6 +619,52 @@ async function Flowchat(index) {
     $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
     $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
+
+
+
+  }
+
+  function tutorialCompartilharvideos(){
+    //$('#videoif').attr('src', getvid[2].video_link);
+
+    $(".novasmensagens").show();
+    $("#btn1").hide();
+    $("#btn2").hide();
+    $("#btn3").hide();
+    tutorialID = 7; //ID do tutorial que foi feito, para ser enviado no feedback.
+
+    $('<div class="message new">' + getdata[52].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[30].img_link  + ' class="responsive" alt=" '+ getimg[30].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[53].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[31].img_link  + ' class="responsive" alt=" '+ getimg[31].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[54].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[32].img_link  + ' class="responsive" alt=" '+ getimg[32].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[55].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[33].img_link  + ' class="responsive" alt=" '+ getimg[33].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[56].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[34].img_link  + ' class="responsive" alt=" '+ getimg[34].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[57].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[35].img_link  + ' class="responsive" alt=" '+ getimg[35].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[58].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[36].img_link  + ' class="responsive" alt=" '+ getimg[36].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[59].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<img src=' + getimg[37].img_link  + ' class="responsive" alt=" '+ getimg[37].img_alt  +' ">' + "</div>").appendTo($(".messages")).addClass("new");
+
+    $('<div class="message new">' + getdata[9].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="btmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver vídeo</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[10].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#POSTModal" id="btnsugestao">Sugestão</button>' + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + getdata[11].text_fala  + "</div>").appendTo($(".messages")).addClass("new");
+    $('<div class="message new">' + '<button type="button" class="btn btn-danger" id="ENDButton" onclick="reload()">Encerrar</button>' + "</div>").appendTo($(".messages")).addClass("new");
+
 
 
 

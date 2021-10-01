@@ -120,8 +120,15 @@ INSERT INTO falas (text_fala) VALUES ('Selecione no minimo uma imagem para envia
 INSERT INTO falas (text_fala) VALUES ('Clique na seta verde para enviar a imagem, aqui você pode escrever uma legenda para a imagem.');
 INSERT INTO falas (text_fala) VALUES ('Pronto, sua imagem será demonstrada na conversa assim como na imagem a seguir:');
 
-
-
+INSERT INTO falas (text_fala) VALUES ('Para compartilhar videos do youtube no whatsapp, basta seguir os seguintes passos:');
+INSERT INTO falas (text_fala) VALUES ('Toque no icone do youtube, como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Então abra o video que quer compartilhar.');
+INSERT INTO falas (text_fala) VALUES ('Clique no botão "compartilhar" como mostrado na imagem a seguir:');
+INSERT INTO falas (text_fala) VALUES ('Para compartilhar no whatsapp, clique no icone do whatsapp, como mostrado na imagem.');
+INSERT INTO falas (text_fala) VALUES ('Agora, selecione para quem você quer mandar o video, pode ser para mais de uma pessoa.');
+INSERT INTO falas (text_fala) VALUES ('Clique na seta para a direita, como mostrado na imagem para enviar.');
+INSERT INTO falas (text_fala) VALUES ('Agora basta clicar no botão de enviar.');
+INSERT INTO falas (text_fala) VALUES ('Pronto, o video deve aparecer na conversa assim como na imagem a seguir:');
 
 
 --INSERÇÃO DE TUTORIAIS
@@ -131,6 +138,8 @@ INSERT INTO tutoriais (nome_tutorial) VALUES ('Adicionar email aos favoritos');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Aumentar o tamanho dos textos');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Tirar print da tela');
 INSERT INTO tutoriais (nome_tutorial) VALUES ('Compartilhar imagens e videos');
+INSERT INTO tutoriais (nome_tutorial) VALUES ('Compartilhar videos do youtube');
+
 
 
 --INSERÇÃO DE IMAGENS
@@ -162,13 +171,22 @@ INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/j3ifr6Z.png', 'Imagem com texto: puxe a aba de notificação para baixo, indicando onde deslizar o dedo.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (5, 'https://i.imgur.com/cAaR2GM.png', 'Imagem com texto: clique na notificação para ver o print, indicando a notificação da captura de tela.');
 
-INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/dNjuAof.png', 'Imagem com texto: abra o Whatsapp, indicando o icone do WHatsapp');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/dNjuAof.png', 'Imagem com texto: abra o Whatsapp, indicando o icone do Whatsapp');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/YUpeg2R.png', 'Imagem com texto: abra alguma conversa, indicando uma conversa qualquer.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/syuXOoA.png', 'Imagem com texto: clique no clipe de papel, indicando o botão para anexar arquivos.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/nP7MLLO.png', 'Imagem com texto: aperte em galeria, indicando o icone de galeria.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/pt7rm0r.png', 'Imagem com texto: selecione uma imagem na galeria, mostrando as imagens a serem selecionadas.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/BcshqMF.png', 'Imagem com texto> clique na seta para a direito, indicando a o botão de enviar.');
 INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (6, 'https://i.imgur.com/gfZ89bH.png', 'Imagem com texto: pronto sua imagem foi enviar, mostrando a imagem enviada na conversa.');
+
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/m5pKHLx.png', 'Imagem com texto: abra o youtube, indicando o icone do Youtube.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/t6VT0mb.png', 'Imagem com texto: abra algum video de sua preferencia, mostrando os videos do youtube.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/u0FxdZM.png', 'Imagem com texto: clique no botão compartilhar, indicando o botão de compartilhar.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/Dbi681E.png', 'Imagem com texto: aperte em Whatsapp, indicando o icone do whatsapp.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/aaNByK1.png', 'Imagem com texto: selecione uma pessoa para enviar o video, mostrando a pessoa selecionada.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/QrC9VFH.png', 'Imagem com texto: clique na seta para a direita, indicando o botão a ser precionado.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/hfhAbSY.png', 'Imagem com texto: precione o botão de enviar, indicando o botão de enviar.');
+INSERT INTO imagens (id_tutorial, img_link, img_alt) VALUES (7, 'https://i.imgur.com/C7pWRgY.png', 'Imagem com texto: pronto, seu video foi enviado, mostrando a mensagem com o video.');
 
 
 
