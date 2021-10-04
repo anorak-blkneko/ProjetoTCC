@@ -326,6 +326,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[0].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -355,6 +356,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[1].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -387,6 +389,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[3].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -418,6 +421,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[4].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -461,6 +465,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[2].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -493,6 +498,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[5].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
@@ -535,6 +541,7 @@ async function Flowchat(index) {
     $('#videoif').attr('src', getvid[6].video_link);
 
     $(".novasmensagens").show();
+    $(".novasmensagens").fadeOut(20000);
     $("#btn1").hide();
     $("#btn2").hide();
     $("#btn3").hide();
